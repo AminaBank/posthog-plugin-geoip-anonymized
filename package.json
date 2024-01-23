@@ -1,7 +1,7 @@
 {
-    "name": "posthog-plugin-geoip",
-    "version": "1.1.0",
-    "description": "Enrich PostHog events and persons with IP location data",
+    "name": "posthog-plugin-geoip-anonymized",
+    "version": "1.0.0",
+    "description": "Remove precise geolocation data from GeoIP",
     "keywords": [
         "posthog",
         "plugin",
@@ -10,12 +10,13 @@
         "geolite"
     ],
     "main": "dist/index.js",
-    "repository": "github:PostHog/posthog-plugin-geoip",
+    "repository": "https://github.com/AminaBank/posthog-plugin-geoip-anonymized",
     "bugs": {
-        "url": "https://github.com/PostHog/posthog-plugin-geoip/issues"
+        "url": "https://github.com/AminaBank/posthog-plugin-geoip-anonymized/issues"
     },
-    "homepage": "https://github.com/PostHog/posthog-plugin-geoip#readme",
+    "homepage": "https://github.com/AminaBank/posthog-plugin-geoip-anonymized#readme",
     "author": "PostHog <hey@posthog.com>",
+    "contributors": ["AMINA Bank AG"],
     "scripts": {
         "test": "jest .",
         "lint": "eslint .",

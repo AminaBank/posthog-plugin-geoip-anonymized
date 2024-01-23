@@ -13,8 +13,6 @@ const defaultLocationSetProps = {
     $geoip_continent_name: null,
     $geoip_continent_code: null,
     $geoip_postal_code: null,
-    $geoip_latitude: null,
-    $geoip_longitude: null,
     $geoip_time_zone: null,
 }
 
@@ -29,8 +27,6 @@ const defaultLocationSetOnceProps = {
     $initial_geoip_continent_name: null,
     $initial_geoip_continent_code: null,
     $initial_geoip_postal_code: null,
-    $initial_geoip_latitude: null,
-    $initial_geoip_longitude: null,
     $initial_geoip_time_zone: null,
 }
 
@@ -63,8 +59,6 @@ const plugin: Plugin = {
                     location['postal_code'] = response.postal.code
                 }
                 if (response.location) {
-                    location['latitude'] = response.location?.latitude
-                    location['longitude'] = response.location?.longitude
                     location['time_zone'] = response.location?.timeZone
                 }
                 if (response.subdivisions) {

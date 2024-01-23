@@ -1,4 +1,7 @@
-# PostHog Plugin: GeoIP
+# PostHog Plugin: GeoIP Anonymized
+This fork of the GeoIP plugin was created out of a need to remove precise geolocation data from the parameters produced by the original plugin. This version does not record latitude and longitude but leaves everything else as it was. 
+
+***The rest of this document is a copy of the original README***
 
 Enrich PostHog events and persons with IP location data. Simply enable this plugin - from that point on, your new events will have GeoIP data added, allowing you to locate users and run queries based on geographic data.
 
@@ -20,8 +23,6 @@ $geoip_country_name?: string
 $geoip_country_code?: string
 $geoip_continent_name?: string
 $geoip_continent_code?: string
-$geoip_latitude?: number
-$geoip_longitude?: number
 $geoip_time_zone?: string
 $geoip_subdivision_1_code?: string
 $geoip_subdivision_1_name?: string
@@ -36,7 +37,7 @@ They are also set on the associated person same as above, plus set_once in `$ini
 
 View of an example event in PostHog:
 
-<img width="708" alt="GeoIP properties in PostHog UI" src="https://user-images.githubusercontent.com/4550621/114558202-bc076600-9c6a-11eb-9c0e-1bd3cc1f3dd7.png">
+<img width="708" alt="GeoIP properties in PostHog UI" src="./example.png">
 
 ## Caveats
 
