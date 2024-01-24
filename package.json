@@ -1,7 +1,7 @@
 {
     "name": "posthog-plugin-geoip-anonymized",
     "version": "1.0.0",
-    "description": "Remove precise geolocation data from GeoIP",
+    "description": "GeoIP without exact location data for greater anonymity",
     "keywords": [
         "posthog",
         "plugin",
@@ -16,7 +16,9 @@
     },
     "homepage": "https://github.com/AminaBank/posthog-plugin-geoip-anonymized#readme",
     "author": "PostHog <hey@posthog.com>",
-    "contributors": ["AMINA Bank AG"],
+    "contributors": [
+        "AMINA Bank AG"
+    ],
     "scripts": {
         "test": "jest .",
         "lint": "eslint .",

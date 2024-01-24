@@ -1,7 +1,7 @@
 {
-    "name": "GeoIP",
-    "url": "https://github.com/PostHog/posthog-plugin-geoip",
-    "description": "Enrich PostHog events and persons with IP location data",
+    "name": "GeoIP Anonymized",
+    "url": "https://github.com/AminaBank/posthog-plugin-geoip-anonymized",
+    "description": "GeoIP without exact location data for greater anonymity",
     "main": "index.ts",
     "posthogVersion": ">=1.24.0",
     "stateless": true
